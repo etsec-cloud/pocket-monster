@@ -1,12 +1,15 @@
 <template>
-  <div>
-    <div>
+  <v-card>
+    <v-card-title>
       {{ pokemonInfo.name }}
-    </div>
-    <div v-for="type in pokemonInfo.types" :key="type.id">
-      {{ type.type.name }}
-    </div>
-  </div>
+    </v-card-title>
+    <v-card-text>
+      <span v-for="type in pokemonInfo.types" :key="type.id">
+        {{ type.type.name }}
+      </span>
+      {{ pokemonInfo.id }}
+    </v-card-text>
+  </v-card>
 </template>
 
 <script>
