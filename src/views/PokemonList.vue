@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-for="pokemon in pokemonList" :key="pokemon.id">
-      <Card :pokemon="pokemon" />
+      <Card :pokemon="pokemon" />g
     </div>
   </div>
 </template>
