@@ -2,6 +2,7 @@
   <div>
     <div v-for="pokemon in pokemonList" :key="pokemon.id">
       <Card :pokemon="pokemon" />
+      cocou
     </div>
   </div>
 </template>
